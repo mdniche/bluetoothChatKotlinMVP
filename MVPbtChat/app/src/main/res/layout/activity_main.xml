@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sample_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/introTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_message" />
+
+    <ListView
+        android:id="@+id/chatLst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatLst">
+
+        <EditText
+            android:id="@+id/messageET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textSize="16dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>
+
